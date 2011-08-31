@@ -26,3 +26,6 @@ gem 'refinerycms-i18n',         '~> 1.0.0'
 
 gem 'fog'
 gem 'dalli'
+
+gem 'devise'
+gem 'devise_cas_authenticatable'

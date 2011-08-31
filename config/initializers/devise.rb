@@ -5,7 +5,7 @@ require 'devise'
 ::Devise.setup do |config|
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in DeviseMailer.
-  config.mailer_sender = "please-change-me@config-initializers-devise.com"
+  config.mailer_sender = "padma@metododerose.org"
 
   # Configure the class responsible to send e-mails.
   # config.mailer = "::Devise::Mailer"
@@ -141,4 +141,8 @@ require 'devise'
   #   end
   #   manager.default_strategies(:scope => :user).unshift :twitter_oauth
   # end
+
+  # ==> CAS Authenticatable configuration
+  config.cas_base_url = "https://www.metododerose.org:8443"
+  config.cas_create_user = true
 end
