@@ -1,18 +1,30 @@
-<%= t('.greeting') %>,
+<% paragraph do %>
+    <%= t('.greeting') %>,<br>
+    <%= t('.you_recieved_new_inquiry') %>
+<%- end -%>
 
-<%= t('.you_recieved_new_inquiry') %>
+<%- paragraph do -%>
 
-<%= t('.inquiry_starts') %>
+    %= t('.inquiry_starts') %><br>
 
-<%= t('.from') %>: <%= @inquiry.name %>
-<%= t('.email') %>: <%= @inquiry.email %>
-<%= t('.padma_account') %>: <%= @inquiry.padma_account %>
-<%= t('.message') %>:
-<%= @inquiry.message %>
+    <%= bold(t('.from')).html_safe %>: <%= @inquiry.name %><br>
+    <%= bold(t('.email')).html_safe %>: <%= @inquiry.email %><br>
+    <%= bold(t('.padma_account')).html_safe %>: <%= @inquiry.padma_account %><br>
+    <%= bold(t('.message')).html_safe %>:<br>
 
-<%= t('.inquiry_ends') %>
+    <%= @inquiry.message %><br>
 
-<%= t('.closing_line') %>,
-<%= RefinerySetting[:site_name] %>
 
-<%= t('.ps') %>
+    <br><%= t('.inquiry_ends') %><br>
+
+<%- end -%>
+
+<%- paragraph do -%>
+    <%= t('.closing_line') %><br>
+<%- end -%>
+
+<%- paragraph do -%>
+    <%= bold(RefinerySetting[:site_name]) %><br>
+
+    <%= t('.ps') %>
+<%- end -%>

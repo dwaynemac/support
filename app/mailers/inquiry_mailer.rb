@@ -4,7 +4,7 @@ class InquiryMailer < ActionMailer::Base
     @inquiry =  inquiry
     @title = InquirySetting.confirmation_subject
     mail( :to => inquiry.email,
-          :subject => InquirySetting.confirmation_subject(Globalize.locale),
+          :subject => InquirySetting.confirmation_subject,
           :from => "\"#{RefinerySetting[:site_name]}\" <no-reply@#{request.domain(RefinerySetting.find_or_set(:tld_length, 1))}>",
           :reply_to => InquirySetting.notification_recipients.split(',').first
     )

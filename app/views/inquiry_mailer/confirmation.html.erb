@@ -1,1 +1,3 @@
-<%= InquirySetting.confirmation_body.gsub("%name%", @inquiry.name) %>
+<%- paragraph do -%>
+    <%= InquirySetting.confirmation_body.gsub("%name%", @inquiry.name) %>
+<%- end -%>
