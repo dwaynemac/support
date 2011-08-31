@@ -11,13 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110831135150) do
+ActiveRecord::Schema.define(:version => 20110831145424) do
 
   create_table "drc_users", :force => true do |t|
     t.string   "username"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "drc_users", ["username"], :name => "index_drc_users_on_username", :unique => true
 
   create_table "images", :force => true do |t|
     t.string   "image_mime_type"
@@ -223,6 +225,5 @@ ActiveRecord::Schema.define(:version => 20110831135150) do
   end
 
   add_index "users", ["id"], :name => "index_users_on_id"
-  add_index "users", ["username"], :name => "index_users_on_username", :unique => true
 
 end
