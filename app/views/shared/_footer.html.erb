@@ -1,0 +1,6 @@
+<p>
+  <%= t('.copyright', :year => Time.now.year,
+                      :site_name => RefinerySetting.find_or_set(:site_name, "Company Name")) %>
+  ||
+  <%= link_to t('footer.sign_out'), destroy_drc_user_session_path %>
+</p>
