@@ -1,3 +1,10 @@
 El sitio esta montado sobre refinerycms
 
 http://refinerycms.com
+
+== Seeds
+
+  Una vez que son integradas en heroku mover todos los archivos de db/seeds an db/seeds-ignore-in-heroku
+  Mantener en db/seeds solo los archivos nuevos que precisan ser ejecutados en heroku.
+  
+  # TODO buscar una solucion mejor :P
