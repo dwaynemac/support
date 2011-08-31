@@ -28,6 +28,8 @@ GEM
       activemodel (= 3.0.10)
       activesupport (= 3.0.10)
     activesupport (3.0.10)
+    acts-as-taggable-on (2.1.1)
+      rails
     acts_as_indexed (0.7.3)
     arel (2.0.10)
     awesome_nested_set (2.0.1)
@@ -125,6 +127,11 @@ GEM
       friendly_id_globalize3 (~> 3.2.1)
       refinerycms-core (= 1.0.4)
     refinerycms-base (1.0.4)
+    refinerycms-blog (1.6.2)
+      acts-as-taggable-on
+      filters_spam (~> 0.2)
+      refinerycms-core (~> 1.0.3)
+      seo_meta (~> 1.1.0)
     refinerycms-core (1.0.4)
       acts_as_indexed (~> 0.7)
       awesome_nested_set (~> 2.0)
@@ -193,6 +200,7 @@ DEPENDENCIES
   fog
   heroku
   refinerycms (~> 1.0.4)
+  refinerycms-blog (~> 1.6.1)
   refinerycms-i18n (~> 1.0.0)
   refinerycms-inquiries (~> 1.0)
   refinerycms-news (~> 1.2)
