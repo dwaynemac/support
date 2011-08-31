@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+h1, h2, h3, h4, h5 { margin: 0; padding: 0; }
+p { padding: 0; margin: 0; }
+h2, h3, p, li { font-family: Helvetica,Arial,sans-serif; color: #4D4D4D; }
+td { vertical-align:top;}
+ul, ol { margin: 0; padding: 0;}
+h1, .date { font-family:Helvetica,Arial,sans-serif; }
+</style>
+</head>
+<body marginwidth="0" marginheight="0" bgcolor="#652416" background="" style="margin: 0px; background-color: #ffffff; background-image: url(''); background-repeat: repeat;" leftmargin="0" topmargin="0">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody>
+<tr valign="top">
+<td>
+<table width="750" height="1000" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center">
+<tbody>
+<tr>
+<td>
+<table width="700" cellspacing="0" cellpadding="0" border="0" align="center">
+<tbody>
+<tr>
+<td valign="top" height="144" bgcolor="#c52223" background="<%= url_for_image('mail_header.gif') %>">
+<table width="100%" height="144" cellspacing="0" cellpadding="0" border="0" align="center" style="height: 144px !important;">
+<tbody>
+<tr>
+<td width="500" valign="middle" style="vertical-align:middle;">
+<table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0" align="left">
+<tbody>
+<tr>
+<td valign="top" height="55" colspan="2">&nbsp;</td>
+</tr>
+<tr>
+<td width="28" valign="top">&nbsp;</td>
+<td valign="top">
+</td>
+</tr>
+<tr>
+<td valign="top" height="34" colspan="2">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td width="200" valign="top">
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+
+<tr>
+<td valign="top">
+<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+<tbody>
+<tr>
+<td width="100%" valign="top">
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="border-bottom-width: 30px; border-bottom-style: solid; border-bottom-color: #ffffff;">
+<tbody>
+<tr>
+<td valign="top" height="32" style="height: 32px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #CCCCCC;">
+<h2 style="margin: 0; padding: 0; font-size: 18px; font-weight: normal; color: #4D4D4D;"> <%= @title %> </h2>
+</td>
+</tr>
+<tr>
+<td valign="top" style="border-top-width: 10px; border-top-style: solid; border-top-color:#ffffff;">
+  <%= yield %>
+</td>
+</tr>
+</tbody>
+</table>
+
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="middle" height="46" bgcolor="#ffffff" background="<%= url_for_image('mail_footer.gif') %>" style="vertical-align:middle; height:46px;">
+<p style="margin-left:50px; color:#4D4D4D; font-size: 11px; text-align: left; font-family:Lucida Grande,Lucida Sans Unicode,arial,sans-serif;">
+  Email enviado de forma autom&aacute;tica.
+</p>
+</td>
+</tr>
+<tr>
+<td valign="middle" height="60" style="vertical-align:middle; height:60px;">
+<p style="margin-left:0px; color:#4D4D4D; font-size: 10px; text-align: center; font-family:Lucida Grande,Lucida Sans Unicode,arial,sans-serif;">
+padma@metododerose.org
+· P · A · D · M · A ·
+</p>
+</td>
+</tr>
+<tr>
+<td valign="top" height="50" style="height:50px;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
