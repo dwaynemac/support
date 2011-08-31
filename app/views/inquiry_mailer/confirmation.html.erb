@@ -1,3 +1,5 @@
 <%- paragraph do -%>
-    <%= InquirySetting.confirmation_body.gsub("%name%", @inquiry.name) %>
+    Gracias por escribirnos <%= bold(@inquiry.name) %><br>
+    Este email es para confirmar que recibimos tu mensaje, nos contactaremos pronto. <br>
+    Gracias.
 <%- end -%>
