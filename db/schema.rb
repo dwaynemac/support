@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110831162106) do
+ActiveRecord::Schema.define(:version => 20110831184503) do
 
   create_table "blog_categories", :force => true do |t|
     t.string   "title"
@@ -84,7 +84,8 @@ ActiveRecord::Schema.define(:version => 20110831162106) do
     t.text     "message"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "spam",       :default => false
+    t.boolean  "spam",          :default => false
+    t.string   "padma_account"
   end
 
   add_index "inquiries", ["id"], :name => "index_inquiries_on_id"
