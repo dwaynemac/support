@@ -1,0 +1,30 @@
+<% paragraph do %>
+    <%= t('.greeting') %>,<br>
+    <%= t('.you_recieved_new_inquiry') %>
+<%- end -%>
+
+<%- paragraph do -%>
+
+    %= t('.inquiry_starts') %><br>
+
+    <%= bold(t('.from')).html_safe %>: <%= @inquiry.name %><br>
+    <%= bold(t('.email')).html_safe %>: <%= @inquiry.email %><br>
+    <%= bold(t('.padma_account')).html_safe %>: <%= @inquiry.padma_account %><br>
+    <%= bold(t('.message')).html_safe %>:<br>
+
+    <%= @inquiry.message %><br>
+
+
+    <br><%= t('.inquiry_ends') %><br>
+
+<%- end -%>
+
+<%- paragraph do -%>
+    <%= t('.closing_line') %><br>
+<%- end -%>
+
+<%- paragraph do -%>
+    <%= bold(RefinerySetting[:site_name]) %><br>
+
+    <%= t('.ps') %>
+<%- end -%>

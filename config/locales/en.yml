@@ -4,3 +4,6 @@
 en:
   footer:
     sign_out: "Sign out"
+  inquiry_mailer:
+    notification:
+      padma_account: "PADMA Account"
