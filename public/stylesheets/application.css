@@ -2,3 +2,195 @@
   Override default refinery application CSS below.
   Formatting applies to all frontend.
 */
+
+/* General Styles */
+
+html {
+	background-image: url('/images/bg_stripes.png');
+}
+
+p {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	color:#4D4D4D;
+}
+
+#page h1 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
+	font-weight:bold;
+	color:#4D4D4D;
+	margin-top:0px;
+}
+
+#page h3 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	color:#4D4D4D;	
+	margin-top:0px;
+}
+
+#page a {
+	color:#09F;
+	text-decoration:none;
+}
+
+/* Noticias */
+
+#page p small {
+	position:relative;
+	top:-10px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	color:#4D4D4D;
+}
+
+/* Header Styles */
+
+#logo {
+	position:relative;
+	height:80px;
+	margin-bottom: 18px;
+	border:1px solid #CCCCCC;
+	/* Gradient Background */
+	background: #F2F2F2; /* fallback */
+	background: -moz-linear-gradient(top, #FFF, #F2F2F2); /* FF3.6 en adelante*/
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0, #FFF),color-stop(1, #F2F2F2)); /* Saf4+, Chrome en adelante*/
+	/* Rounded Corners */
+	-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */
+	/* Box Shadows */
+	-webkit-box-shadow: 0 0 2px #D8D8D8; -moz-box-shadow: 0 0 2px #D8D8D8; box-shadow: 0 0 2px #D8D8D8; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */
+}
+
+#logo a {
+	visibility: hidden;
+}
+
+#logo a:before {
+	content:'';
+	visibility: visible;
+	position:absolute;
+	top:14px;
+	left:12px;
+	display:inline-block;
+	width:222px;
+	height:52px;
+	background-image: url('/images/logo_padma_big.png');	
+}
+
+#logo a:after {
+	content:'';
+	visibility: visible;
+	position:absolute;
+	bottom:8px;
+	right:15px;
+	display:inline-block;
+	width:195px;
+	height:28px;
+	background-image: url('/images/text_support.png');
+}
+
+/* Page Styles */
+
+#page {
+	margin-top:15px;
+	padding: 15px;
+	width: 970px;
+	border:1px solid #CCCCCC;
+	background: rgba(255, 255, 255, 0.8);
+	/* Rounded Corners */
+	-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */
+	/* Box Shadows */
+	-webkit-box-shadow: 0 0 2px #D8D8D8; -moz-box-shadow: 0 0 2px #D8D8D8; box-shadow: 0 0 2px #D8D8D8; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */	
+}
+
+/* Footer Styles */
+
+footer {
+	position:relative;
+	height:43px;
+	margin-top:15px;
+	border:1px solid #CCCCCC;
+	/* Gradient Background */
+	background: #F2F2F2; /* fallback */
+	background: -moz-linear-gradient(top, #FFF, #F2F2F2); /* FF3.6 en adelante*/
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0, #FFF),color-stop(1, #F2F2F2)); /* Saf4+, Chrome en adelante*/
+	/* Rounded Corners */
+	-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */
+	/* Box Shadows */
+	-webkit-box-shadow: 0 0 2px #D8D8D8; -moz-box-shadow: 0 0 2px #D8D8D8; box-shadow: 0 0 2px #D8D8D8; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */
+}
+
+footer:after {
+	content:'';
+	position:absolute;
+	top:5px;
+	right:10px;
+	display:inline-block;
+	width:36px;
+	height:36px;
+	background-image: url('/images/logo_padma_small_grey.png');
+}
+
+footer p {
+	margin-top:15px;
+	margin-left:10px;
+	font-weight:bold;
+	color:#CECECE;
+}
+
+footer a{
+	color:#09F;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+footer a:before {
+	content:' · ';
+	color:#09F;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+/* Menu Styles */
+
+.menu ul {
+    margin: 0px 0px;
+    padding:0;
+
+	overflow:auto;
+	border:1px solid #7FCDEE;
+	background: rgba(212, 238, 249, 0.8);
+	/* Rounded Corners */
+	-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */
+	/* Box Shadows */
+	-webkit-box-shadow: 0 0 2px #D8D8D8; -moz-box-shadow: 0 0 2px #D8D8D8; box-shadow: 0 0 2px #D8D8D8; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */
+}
+.menu li {
+    float: left;
+    list-style: none outside none;
+    margin: 0 0 0 0;
+    padding: 0;
+	border-right:1px solid #7FCDEE;
+}
+.menu li.last {
+    margin-right: 0;
+}
+.menu li.selected > a {
+    font-weight: bold;
+}
+
+.menu li a {
+    display:inline-block;
+	width:auto;
+	padding: 6px 10px 6px 10px; 
+	height:auto;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#09F;
+	font-weight:bold;
+	text-decoration:none;
+}
