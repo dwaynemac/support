@@ -2,11 +2,10 @@
   Override default refinery application CSS below.
   Formatting applies to all frontend.
 */
-
 /* General Styles */
 
 html {
-	background-image: url('/images/bg_stripes.png');
+	background-image: url('bg_stripes.png');
 }
 
 p {
@@ -16,7 +15,15 @@ p {
 	color:#4D4D4D;
 }
 
-#page h1 {
+ul	{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	list-style: none outside none;
+	color:#4D4D4D;
+}
+
+#page h1, #page h2, #page h3 {
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:20px;
 	font-weight:bold;
@@ -24,17 +31,32 @@ p {
 	margin-top:0px;
 }
 
+#page h2 {
+	font-size:18px;
+}
+
 #page h3 {
-	font-family:Arial, Helvetica, sans-serif;
 	font-size:16px;
-	font-weight:bold;
-	color:#4D4D4D;	
-	margin-top:0px;
 }
 
 #page a {
 	color:#09F;
 	text-decoration:none;
+}
+
+#flash.flash.flash_notice {
+	padding: 10px;
+	margin-bottom:15px;
+	border: 1px solid #7FCDEE;
+	background: rgba(212, 238, 249, 0.8);
+	/* Rounded Corners */
+	-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */
+	/* Box Shadows */
+	-webkit-box-shadow: 0 0 2px #D8D8D8; -moz-box-shadow: 0 0 2px #D8D8D8; box-shadow: 0 0 2px #D8D8D8; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#4D4D4D;
 }
 
 /* Noticias */
@@ -47,6 +69,258 @@ p {
 	font-weight:normal;
 	color:#4D4D4D;
 }
+
+/* Blog */
+
+#page #blog_posts header h1, #page #show_blog_post header h1 {
+	margin-bottom:12px;
+}
+
+
+#page #blog_posts header .details, #page #show_blog_post header .details {
+ 	position:relative;
+	width: 560px;
+	height:20px;
+	padding:10px 10px 0 0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	color:#4D4D4D;
+	border-top: 1px dashed #CCCCCC;	
+}
+
+#page #blog_posts header .details aside, #page #show_blog_post header .details aside {
+	float:right;
+}
+
+#page #blog_posts footer {
+	position:relative;
+	width: 570px;
+	margin-top:15px;
+	margin-bottom:0px;
+	border: none;
+	background: #f2f2f2;
+	/* Rounded Corners */
+	-webkit-border-radius: 0px 0px 10px 10px; -moz-border-radius: 0px 0px 10px 10px; border-radius: 0px 0px 10px 10px; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */
+	/* Box Shadows */
+	-webkit-box-shadow: 0 0 0px #D8D8D8; -moz-box-shadow: 0 0 0px #D8D8D8; box-shadow: 0 0 0px #D8D8D8; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */
+}
+
+#page #blog_posts footer p {
+	float:left;
+}
+
+#page #blog_posts footer aside {
+	float:right;
+	margin:15px 10px 12px 0px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	color:#4D4D4D;
+}
+
+#body_content_right #rss_feed_subscribe {
+	display:block;
+	padding: 15px;
+	margin-bottom:15px;
+	border: 1px solid #FFF;
+	background: #F2F2F2;
+	/* Rounded Corners */
+	-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */
+	/* Box Shadows */
+	-webkit-box-shadow: 0 0 2px #D8D8D8; -moz-box-shadow: 0 0 2px #D8D8D8; box-shadow: 0 0 2px #D8D8D8; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	list-style: none outside none;
+}
+
+/* Comments */
+
+#comments {
+	padding-top:10px;
+	border-top: 1px dashed #CCCCCC;	
+}
+
+#comments .blog_comment_message  {
+	padding:15px 15px 10px 15px;
+	margin-bottom:15px;
+	border: 1px solid #CCC;
+	background: #FFF;
+	/* Rounded Corners */
+	-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */
+	/* Box Shadows */
+	-webkit-box-shadow: 0 0 2px #D8D8D8; -moz-box-shadow: 0 0 2px #D8D8D8; box-shadow: 0 0 2px #D8D8D8; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	list-style: none outside none;
+}
+
+#comments .blog_comment_message img {
+	float:left;
+	margin-right:15px;
+}
+
+#comments .blog_comment_message p {
+	display:block;
+	min-height:60px;
+	margin-top:0px;
+	margin-bottom:15px;
+}
+
+#comments .blog_comment_message footer {
+	background:none;
+	width:auto;
+	height:auto;
+	padding:10px 10px 0px 0px;
+	margin:0px;
+	border: 0px;
+	border-top:1px dashed #CCC;
+	/* Rounded Corners */
+	-webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */
+	/* Box Shadows */
+	-webkit-box-shadow: 0 0 0px #D8D8D8; -moz-box-shadow: 0 0 0px #D8D8D8; box-shadow: 0 0 0px #D8D8D8; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */
+}
+
+#comments .blog_comment_message footer p {
+	min-height:0px;
+	margin:0px;
+}
+
+#new_blog_comment {
+	overflow:auto;
+	display:block;
+	padding: 15px;
+	margin-bottom:5px;
+	border: 1px solid #FFF;
+	background: #F2F2F2;
+	/* Rounded Corners */
+	-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */
+	/* Box Shadows */
+	-webkit-box-shadow: 0 0 2px #D8D8D8; -moz-box-shadow: 0 0 2px #D8D8D8; box-shadow: 0 0 2px #D8D8D8; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	list-style: none outside none;
+}
+
+#new_blog_comment label {
+	display: inline-block;
+	width:100px;
+	height:20px;
+}
+
+#new_blog_comment input, #new_blog_comment textarea {
+	padding:2px 2px;
+	margin-bottom:10px;
+	height:20px;
+	width:430px;
+	border: 1px solid #CCC;
+	/* Rounded Corners */
+	-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */	
+	/* Box Shadows */
+	-webkit-box-shadow: 0 0 2px #D8D8D8; -moz-box-shadow: 0 0 2px #D8D8D8; box-shadow: 0 0 2px #D8D8D8; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */
+}
+
+#new_blog_comment textarea {
+	height:100px;
+}
+
+#new_blog_comment .field.message_field label {
+	vertical-align: top;
+	margin-top:5px;
+} 
+
+#new_blog_comment .field.form-actions input {
+	width:auto;
+	height:auto;
+	padding:5px;
+	float:right;
+	margin-right:1px;
+	margin-top:5px;
+	margin-bottom:0px;
+	border: 1px solid #60AFFE;
+	/* Gradient Background */
+	background: #B0E2FF; /* fallback */
+	background: -moz-linear-gradient(top, #B0E2FF, #5CACEE); /* FF3.6 en adelante*/
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0, #B0E2FF),color-stop(1, #5CACEE)); /* Saf4+, Chrome en adelante*/
+	font-weight:bold;
+	color:#fff;
+}
+
+/* Contact Form */
+
+.inquiries > p {
+	margin-top:0px;
+}
+
+#new_inquiry {
+	overflow:auto;
+	display:block;
+	padding: 15px;
+	margin-bottom:5px;
+	border: 1px solid #FFF;
+	background: #F2F2F2;
+	/* Rounded Corners */
+	-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */
+	/* Box Shadows */
+	-webkit-box-shadow: 0 0 2px #D8D8D8; -moz-box-shadow: 0 0 2px #D8D8D8; box-shadow: 0 0 2px #D8D8D8; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	list-style: none outside none;
+}
+
+#new_inquiry label {
+	display: inline-block;
+	padding-top:2px;
+	width:100px;
+	height:18px;
+}
+
+#new_inquiry input, #new_inquiry textarea {
+	padding:2px 2px;
+	margin-top:0px;
+	margin-bottom:0px;
+	height:20px;
+	width:430px;
+	border: 1px solid #CCC;
+	/* Rounded Corners */
+	-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */	
+	/* Box Shadows */
+	-webkit-box-shadow: 0 0 2px #D8D8D8; -moz-box-shadow: 0 0 2px #D8D8D8; box-shadow: 0 0 2px #D8D8D8; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */
+}
+
+#new_inquiry textarea {
+	height:100px;
+}
+
+#new_inquiry .field label {
+	vertical-align: top;
+	margin-top:5px;
+} 
+
+#new_inquiry .actions input {
+	float:right;
+	width:auto;
+	height:auto;
+	padding:5px;
+	margin:5px 4px 0px 0px;
+	border: 1px solid #60AFFE;
+	/* Gradient Background */
+	background: #B0E2FF; /* fallback */
+	background: -moz-linear-gradient(top, #B0E2FF, #5CACEE); /* FF3.6 en adelante*/
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0, #B0E2FF),color-stop(1, #5CACEE)); /* Saf4+, Chrome en adelante*/
+	font-weight:bold;
+	color:#fff;
+}
+
+
+
+
+
+/* Main Layout */
 
 /* Header Styles */
 
@@ -78,7 +352,7 @@ p {
 	display:inline-block;
 	width:222px;
 	height:52px;
-	background-image: url('/images/logo_padma_big.png');	
+	background-image: url('logo_padma_big.png');	
 }
 
 #logo a:after {
@@ -90,7 +364,7 @@ p {
 	display:inline-block;
 	width:195px;
 	height:28px;
-	background-image: url('/images/text_support.png');
+	background-image: url('text_support.png');
 }
 
 /* Page Styles */
@@ -107,12 +381,28 @@ p {
 	-webkit-box-shadow: 0 0 2px #D8D8D8; -moz-box-shadow: 0 0 2px #D8D8D8; box-shadow: 0 0 2px #D8D8D8; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */	
 }
 
+#body_content_right ul {
+	padding: 15px;
+	margin-bottom:15px;
+	border: 1px solid #FFF;
+	background: #F2F2F2;
+	/* Rounded Corners */
+	-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */
+	/* Box Shadows */
+	-webkit-box-shadow: 0 0 2px #D8D8D8; -moz-box-shadow: 0 0 2px #D8D8D8; box-shadow: 0 0 2px #D8D8D8; /* CSS3 con -moz- & -webkit prefix for application on firefox + chrome */
+}
+
+#body_content_right ul li a {
+	margin:auto;
+}
+
 /* Footer Styles */
 
 footer {
 	position:relative;
 	height:43px;
 	margin-top:15px;
+	margin-bottom:20px;
 	border:1px solid #CCCCCC;
 	/* Gradient Background */
 	background: #F2F2F2; /* fallback */
@@ -132,7 +422,7 @@ footer:after {
 	display:inline-block;
 	width:36px;
 	height:36px;
-	background-image: url('/images/logo_padma_small_grey.png');
+	background-image: url('logo_padma_small_grey.png');
 }
 
 footer p {
@@ -160,7 +450,6 @@ footer a:before {
 .menu ul {
     margin: 0px 0px;
     padding:0;
-
 	overflow:auto;
 	border:1px solid #7FCDEE;
 	background: rgba(212, 238, 249, 0.8);
