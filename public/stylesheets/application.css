@@ -5,7 +5,7 @@
 /* General Styles */
 
 html {
-	background-image: url('bg_stripes.png');
+	background-image: url('/images/bg_stripes.png');
 }
 
 p {
@@ -352,7 +352,7 @@ ul	{
 	display:inline-block;
 	width:222px;
 	height:52px;
-	background-image: url('logo_padma_big.png');	
+	background-image: url('/images/logo_padma_big.png');
 }
 
 #logo a:after {
@@ -364,7 +364,7 @@ ul	{
 	display:inline-block;
 	width:195px;
 	height:28px;
-	background-image: url('text_support.png');
+	background-image: url('/images/text_support.png');
 }
 
 /* Page Styles */
@@ -422,7 +422,7 @@ footer:after {
 	display:inline-block;
 	width:36px;
 	height:36px;
-	background-image: url('logo_padma_small_grey.png');
+	background-image: url('/images/logo_padma_small_grey.png');
 }
 
 footer p {
