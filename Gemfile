@@ -19,11 +19,11 @@ group :development, :test do
   gem 'heroku'
 end
 
-gem 'refinerycms',              '~> 1.0.4'
-gem 'refinerycms-inquiries',    '~> 1.0'
-gem "refinerycms-news",         '~> 1.2'
-gem 'refinerycms-i18n',         '~> 1.0.0'
-gem 'refinerycms-blog',         '~> 1.6.1'
+gem 'refinerycms',              '1.0.4'
+gem 'refinerycms-inquiries',    '1.0.1'
+gem "refinerycms-news",         '1.2.0'
+gem 'refinerycms-i18n',         '1.0.0'
+gem 'refinerycms-blog',         '1.6.2'
 
 gem 'fog'
 gem 'dalli'
