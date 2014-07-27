@@ -199,9 +199,9 @@ DEPENDENCIES
   devise_cas_authenticatable
   fog
   heroku
-  refinerycms (~> 1.0.4)
-  refinerycms-blog (~> 1.6.1)
-  refinerycms-i18n (~> 1.0.0)
-  refinerycms-inquiries (~> 1.0)
-  refinerycms-news (~> 1.2)
+  refinerycms (= 1.0.4)
+  refinerycms-blog (= 1.6.2)
+  refinerycms-i18n (= 1.0.0)
+  refinerycms-inquiries (= 1.0.1)
+  refinerycms-news (= 1.2.0)
   sqlite3
