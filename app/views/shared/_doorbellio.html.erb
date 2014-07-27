@@ -1,0 +1,13 @@
+<script type="text/javascript">
+    window.doorbellOptions = {
+        appKey: 'iNOjv7InIQQ0L7prFdmE7HnDz28LJhiFelR97KtOOHGMRBJC5zecSJQbx1cq9W7P',
+        email: '<%= current_drc_user.username %>@metododerose.org',
+        hideEmail: true,
+        properties: {
+          username: '<%= current_drc_user.username %>'
+        }
+    };
+    (function(d, t) {
+        var g = d.createElement(t);g.id = 'doorbellScript';g.type = 'text/javascript';g.async = true;g.src = 'https://doorbell.io/button/263';(d.getElementsByTagName('head')[0]||d.getElementsByTagName('body')[0]).appendChild(g);
+    }(document, 'script'));
+</script>
