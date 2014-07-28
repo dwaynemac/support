@@ -81,6 +81,7 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    memcachier (0.0.2)
     mime-types (1.16)
     multi_json (1.0.3)
     net-scp (1.0.4)
@@ -199,6 +200,7 @@ DEPENDENCIES
   devise_cas_authenticatable
   fog
   heroku
+  memcachier
   refinerycms (= 1.0.4)
   refinerycms-blog (= 1.6.2)
   refinerycms-i18n (= 1.0.0)

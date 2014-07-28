@@ -26,6 +26,7 @@ gem 'refinerycms-i18n',         '1.0.0'
 gem 'refinerycms-blog',         '1.6.2'
 
 gem 'fog'
+gem 'memcachier'
 gem 'dalli'
 
 gem 'devise'
