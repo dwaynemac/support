@@ -1,6 +1,7 @@
 <script type="text/javascript">
     window.doorbellOptions = {
         appKey: 'GiomsMaEOXpPyGAIJnF2uDluES5JRr9hhx4vK6VDyzIbgjwoDrczPpFVMAfdKL6F',
+        <%= generate_secure_doorbell_signature() %>
         email: '<%= current_drc_user.username %>@metododerose.org',
         hideEmail: true,
         properties: {
