@@ -17,6 +17,7 @@ group :development, :test do
   # Finally, run 'rake' to run the tests.
   # gem 'refinerycms-testing',    '~> 1.0.4'
   gem 'heroku'
+  gem 'heroku-api'
 end
 
 gem 'refinerycms',              '1.0.4'
