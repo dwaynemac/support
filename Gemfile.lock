@@ -92,6 +92,8 @@ GEM
       multi_json (~> 1.8)
     i18n (0.5.0)
     inflecto (0.0.2)
+    intercom-rails (0.2.27)
+      activesupport (> 3.0)
     ipaddress (0.8.0)
     launchy (2.4.2)
       addressable (~> 2.3)
@@ -223,6 +225,7 @@ DEPENDENCIES
   fog
   heroku
   heroku-api
+  intercom-rails
   memcachier
   refinerycms (= 1.0.4)
   refinerycms-blog (= 1.6.2)
